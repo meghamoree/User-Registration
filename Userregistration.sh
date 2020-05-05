@@ -14,3 +14,17 @@ function FirstName()
 		fi
 	}
 FirstName
+
+function  LastName ()
+
+	{
+		read -p "Enter the last name : " lastName
+		pattern="^[A-Z][a-z]{3,}$"
+		if [[ $lastName =~ $pattern ]]
+		then
+			echo "okay"
+		else
+			echo "not okay"
+		fi
+	}
+LastName
