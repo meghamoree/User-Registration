@@ -28,3 +28,17 @@ function  LastName ()
 		fi
 	}
 LastName
+
+function  ValidEmail ()
+
+	{
+		read -p "Enter valid email address : " email
+		local pattern="^[a-zA-Z0-9]+([._+-][a-zA-Z0-9]+)*@[0-9a-zA-Z]+.[a-zA-Z]{2,4}([.][a-zA-Z]{2})*$"
+		if [[ $email =~ $pattern ]]
+		then
+			echo "okay"
+		else
+			echo "not okay"
+		fi
+	}
+ValidEmail
