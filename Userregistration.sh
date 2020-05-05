@@ -42,3 +42,17 @@ function  ValidEmail ()
 		fi
 	}
 ValidEmail
+
+function  MobileNumber ()
+
+{
+	read -p "Enter mobile number : " number
+	local pattern="^[0-9]{2}[ ][0-9]{10}$"
+	if [[ $number =~ $pattern ]]
+	then
+		echo "okay"
+	else
+		echo "not okay"
+	fi
+}
+MobileNumber
