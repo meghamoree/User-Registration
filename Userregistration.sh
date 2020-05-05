@@ -62,7 +62,8 @@ function  Password ()
 	read -p "Enter password :  " password
 	local pattern1="[a-zA-Z0-9]{8,}"
 	local pattern2="[a-zA-Z0-9]*[A-Z][a-zA-Z0-9]*"
-	if [[ $password =~ $pattern1 && $password =~ $pattern2 ]]
+	local pattern3="[a-zA-Z0-9]*[0-9][a-zA-Z0-9]*"
+	if [[ $password =~ $pattern1 && $password =~ $pattern2 && $password =~ $pattern3 ]]
 	then
 		echo "okay"
 	else
