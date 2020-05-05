@@ -74,4 +74,3 @@ function  Password ()
 Password
 
 
-	if [[ $password =~ $pattern1 && $password =~ $pattern2 ]]
